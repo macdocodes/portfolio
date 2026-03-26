@@ -7,14 +7,14 @@
 
 /* === 2. CSS CUSTOM PROPERTIES (change these to personalise) === */
 :root {
-  --clr-primary:  #1A3C6E;  /* Main brand colour — try #065F46 for green */
-  --clr-accent:   #E8A020;  /* Highlights and buttons */
+  --clr-primary:  #6B46C1;  /* Main brand colour — purple theme */
+  --clr-accent:   #EC4899;  /* Highlights and buttons — pink */
   --clr-text:     #1A1A1A;
-  --clr-muted:    #5C6B8A;
-  --clr-bg:       #F0F4FC;
+  --clr-muted:    #7C3AED;
+  --clr-bg:       #F3F4F6;
   --clr-white:    #FFFFFF;
-  --clr-border:   #C8D4E8;
-  --clr-gradient: linear-gradient(135deg, #1A3C6E 0%, #2C74B3 45%, #E8A020 100%);
+  --clr-border:   #E5E7EB;
+  --clr-gradient: linear-gradient(135deg, #6B46C1 0%, #8B5CF6 45%, #EC4899 100%);
   --radius:       14px;
   --shadow:       0 2px 14px rgba(0,0,0,0.12);
   --max-width:    1100px;
@@ -26,7 +26,7 @@ body {
   font-size: 16px;
   line-height: 1.65;
   color: var(--clr-text);
-  background: radial-gradient(circle at top, #fdfcff 0%, #eff6ff 35%, #dbe7f6 100%);
+  background: radial-gradient(circle at top, #fdf4ff 0%, #f3f4f6 35%, #e9d5ff 100%);
   min-height: 100vh;
 }
 
@@ -34,7 +34,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: linear-gradient(140deg, rgba(26,60,110,0.12), rgba(232,160,32,0.08));
+  background: linear-gradient(140deg, rgba(107,70,193,0.12), rgba(236,72,153,0.08));
   pointer-events: none;
   z-index: -1;
 }
@@ -128,7 +128,7 @@ nav a:hover, nav a.active {
   display: inline-block;
   padding: 0.8rem 2rem;
   background: var(--clr-accent);
-  color: #1a0e00;
+  color: white;
   border-radius: var(--radius);
   text-decoration: none;
   font-weight: 600;
@@ -168,11 +168,11 @@ nav a:hover, nav a.active {
   padding: 1.5rem 0;
 }
 .card {
-  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
   border-radius: calc(var(--radius) + 4px);
   padding: 1.6rem;
-  border: 1px solid rgba(53, 96, 159, 0.2);
-  box-shadow: 0 6px 22px rgba(25, 53, 100, 0.12);
+  border: 1px solid rgba(107,70,193,0.2);
+  box-shadow: 0 6px 22px rgba(107,70,193,0.12);
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
@@ -184,7 +184,7 @@ nav a:hover, nav a.active {
   content: '';
   position: absolute;
   inset: -40px;
-  background: radial-gradient(circle at 30% 30%, rgba(232,160,32,0.26), transparent 45%);
+  background: radial-gradient(circle at 30% 30%, rgba(236,72,153,0.26), transparent 45%);
   transform: scale(0.9);
   opacity: 0;
   transition: opacity 0.35s ease, transform 0.35s ease;
@@ -195,20 +195,20 @@ nav a:hover, nav a.active {
 }
 .card:hover {
   transform: translateY(-6px) rotate(-0.2deg);
-  box-shadow: 0 12px 30px rgba(26, 60, 110, 0.21);
-  border-color: rgba(232, 160, 32, 0.45);
+  box-shadow: 0 12px 30px rgba(107,70,193,0.21);
+  border-color: rgba(236,72,153,0.45);
 }
 .card-tag {
   display: inline-block;
-  background: linear-gradient(140deg, rgba(232,160,32,0.16), rgba(26,60,110,0.16));
-  color: #1f4b8d;
+  background: linear-gradient(140deg, rgba(236,72,153,0.16), rgba(107,70,193,0.16));
+  color: #7c3aed;
   font-size: 0.72rem;
   font-weight: 700;
   padding: 4px 12px;
   border-radius: 999px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  border: 1px solid rgba(26,60,110,0.2);
+  border: 1px solid rgba(107,70,193,0.2);
 }
 .card h3    { font-size: 1.1rem; color: var(--clr-primary); }
 .card p     { font-size: 0.9rem; color: var(--clr-muted); flex: 1; }
@@ -243,7 +243,7 @@ input, select, textarea {
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--clr-primary);
-  box-shadow: 0 0 0 3px rgba(26,60,110,0.12);
+  box-shadow: 0 0 0 3px rgba(107,70,193,0.12);
 }
 
 /* === 12. FOOTER === */
