@@ -7,14 +7,14 @@
 
 /* === 2. CSS CUSTOM PROPERTIES (change these to personalise) === */
 :root {
-  --clr-primary:  #0f172a;  /* Deep dark blue */
-  --clr-accent:   #f59e0b;  /* Amber */
+  --clr-primary:  #4c1d95;  /* Dark purple */
+  --clr-accent:   #ec4899;  /* Pink */
   --clr-text:     #1e293b;  /* Dark slate */
-  --clr-muted:    #06b6d4;  /* Cyan */
+  --clr-muted:    #8b5cf6;  /* Light purple */
   --clr-bg:       #f8fafc;  /* Light slate */
   --clr-white:    #FFFFFF;
   --clr-border:   #e2e8f0;  /* Slate border */
-  --clr-gradient: linear-gradient(135deg, #0f172a 0%, #06b6d4 45%, #f59e0b 100%);
+  --clr-gradient: linear-gradient(135deg, #4c1d95 0%, #8b5cf6 45%, #ec4899 100%);
   --radius:       16px;
   --shadow:       0 4px 20px rgba(0,0,0,0.08);
   --max-width:    1100px;
@@ -34,7 +34,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: linear-gradient(140deg, rgba(15,23,42,0.08), rgba(245,158,11,0.06));
+  background: linear-gradient(140deg, rgba(76,29,149,0.08), rgba(236,72,153,0.06));
   pointer-events: none;
   z-index: -1;
 }
@@ -155,7 +155,7 @@ nav a:hover, nav a.active {
 .btn:hover {
   opacity: 0.95;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(245,158,11,0.3);
+  box-shadow: 0 8px 25px rgba(236,72,153,0.3);
 }
 .btn:hover     { opacity: 0.88; transform: translateY(-1px); }
 .btn-outline   {
@@ -239,7 +239,7 @@ nav a:hover, nav a.active {
   content: '';
   position: absolute;
   inset: -40px;
-  background: radial-gradient(circle at 30% 30%, rgba(245,158,11,0.15), transparent 50%);
+  background: radial-gradient(circle at 30% 30%, rgba(236,72,153,0.15), transparent 50%);
   transform: scale(0.9);
   opacity: 0;
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -251,11 +251,11 @@ nav a:hover, nav a.active {
 .card:hover {
   transform: translateY(-8px) rotate(-0.5deg);
   box-shadow: 0 16px 48px rgba(15,23,42,0.15);
-  border-color: rgba(245,158,11,0.3);
+  border-color: rgba(236,72,153,0.3);
 }
 .card-tag {
   display: inline-block;
-  background: linear-gradient(140deg, rgba(245,158,11,0.12), rgba(15,23,42,0.12));
+  background: linear-gradient(140deg, rgba(236,72,153,0.12), rgba(76,29,149,0.12));
   color: #0f172a;
   font-size: 0.75rem;
   font-weight: 700;
@@ -263,7 +263,7 @@ nav a:hover, nav a.active {
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  border: 1px solid rgba(13,148,136,0.2);
+  border: 1px solid rgba(139,92,246,0.2);
 }
 .card h3    { font-size: 1.1rem; color: var(--clr-primary); }
 .card p     { font-size: 0.9rem; color: var(--clr-muted); flex: 1; }
